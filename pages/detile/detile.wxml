@@ -1,0 +1,46 @@
+<scroll-view class='body'>
+  <view class='bg bg-blur'></view>
+  <view class='title content-front'>
+    <image src="{{book.imags}}"></image>
+    <view class='bookinfro'>
+      <view class='disbook'>
+        <text>{{book.ename}}</text>
+        <text>{{book.name}}</text>
+        <text>{{book.author}}</text>
+      </view>
+      <view class='bookintro'>
+        {{book.reading}}
+      </view>
+    </view>
+  </view>
+  <view class='publish'>
+    <text>出版商</text>
+    <text>{{book.publish}}</text>
+  </view>
+  <view class='intro'>
+    <text>{{book.intro1}}
+   </text>
+    <text>展开</text>
+    <view class='classfiy'>
+      <view class='cla'>
+        <image src='../../bookimgs/GRE.png'></image>
+      </view>
+      <image src="../../bookimgs/share.png" class='share'></image>
+    </view>
+  </view>
+  <view class='particle'>
+    <view>
+      <text>详情</text>
+      <text>目录</text>
+    </view>
+    <image src='../../bookimgs/xiangqing.png'></image>
+  </view>
+  <view class='mark'>
+    <text>书评（195）</text>
+  </view>
+  <view class='bottom'>
+    <text>移除书桌</text>
+    <text bindtap='toread'>试读</text>
+    <text>解锁全书</text>
+  </view>
+</scroll-view>

@@ -1,0 +1,27 @@
+/* pages/read/read.wxss */
+.body{
+  width: 750rpx;
+  background: #f3f3f3;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.body view:nth-child(1){
+  font-size: 20px;
+  font-weight: bold;
+  width: 750rpx;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.body text{
+  font-size: 20px;
+  width: 750rpx;
+  text-align: center;
+   word-spacing: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  text-indent: 20px;
+  word-break:break-all;
+}

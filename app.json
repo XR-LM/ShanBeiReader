@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/table/table",
+    "pages/index/index",
+    "pages/read/read",
+    "pages/detile/detile",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "扇贝阅读",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "backgroundColor": "white",
+    "selectColor": "666",
+    "borderStyle": "f0f0f0",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "书城",
+        "iconPath": "imgs/home.png",
+        "selectedIconPath": "imgs/home_avtive.png"
+      },
+      {
+        "pagePath": "pages/table/table",
+        "text": "书桌",
+        "iconPath": "imgs/book.png",
+        "selectedIconPath": "imgs/book_active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "iconPath": "imgs/my.png",
+        "selectedIconPath": "imgs/my_active.png"
+      }
+    ]
+  }
+}

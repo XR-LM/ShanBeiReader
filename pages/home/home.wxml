@@ -1,0 +1,41 @@
+<scroll-view class='body'>
+  <view class='serch'>
+    <image src='../../imgs/serch.png'></image>
+    <input type='text' placeholder='输入你想要搜索的书籍'></input>
+  </view>
+  <view class='headimage'>
+    <image src="../../imgs/titlepic.png"></image>
+  </view>
+  <view class='discount'>
+    <view class='title1'>
+      -{{book[0].title}}-
+    </view>
+    <view wx:for="{{book[0].books}}" wx:key="{{index}}" class='disbook'>
+      <image src='{{item.imags}}' bindtap='todetile' data-id="{{index}}" data-type=''></image>
+      <view class='bookinfro'>
+        <view class='bookname'>
+          <text>{{item.ename}}</text>
+          <text>{{item.name}}</text>
+          <text>{{item.author}}</text>
+        </view>
+        <view class='bookintro'>
+          {{item.intro}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='discount' wx:for="{{booklist}}">
+    <view class='title1'>
+      -{{item.title}}-
+    </view>
+    <view class='halibote'>
+      <view wx:for="{{item.books}}" wx:key="{{index}}" class='mofabook'>
+        <image src='{{item.imags}}' bindtap='todetile' data-id="{{index}}" data-type="{{item.type}}"></image>
+        <view class='mofabookname'>
+          <view>{{item.name}}</view>
+          <view>{{item.author}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</scroll-view>

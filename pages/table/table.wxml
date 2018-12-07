@@ -1,0 +1,20 @@
+<!--pages/table/table.wxml-->
+<view class='body'>
+  <view class='title'>
+    <text bindtap='tomytable'>我的全部图书</text>
+  </view>
+  <view class='hot'>
+    <scroll-view scroll-x class='hotpic'>
+      <view wx:for="{{book[0].books}}"  class='list' bindtouchstart="touchStart"  bindtouchmove="touchMove" bindtouchend="touchEnd">
+      <view>
+        <image src="{{item.imags}}"></image>
+      </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class='end'>
+    <text>{{bookname}}</text>
+    <text>{{bookename}}</text>
+    <text>已阅读0小时0分钟</text>
+  </view>
+</view>

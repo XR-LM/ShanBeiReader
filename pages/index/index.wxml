@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="callme">
+    <view class='v1'>
+      <view>
+        <image src='../../imgs/clock.png'></image>
+        <text>提醒设置</text>
+      </view>
+      <image src='../../imgs/right1.png'></image>
+    </view>
+    <view class='v1'>
+      <view>
+        <image src='../../imgs/link.png'></image>
+        <text>产品介绍</text>
+      </view>
+      <image src='../../imgs/right1.png'></image>
+    </view>
+    <view class='v1'> 
+      <view>
+        <image src='../../imgs/nov.png'></image>
+        <text>联系我们</text>
+      </view>
+      <image src='../../imgs/right1.png'></image>
+    </view>
+    <view class='v1' style='border:none'>
+      <view>
+        <image src='../../imgs/share.png'></image>
+        <text>分享小程序</text>
+      </view>
+      <image src='../../imgs/right1.png'></image>
+    </view>
+  </view>
+</view>
